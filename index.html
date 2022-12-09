@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Home</title>
+
+</head>
+<body>
+    <header class="header-home" id="header-principal">
+        <div class="logotipo">
+            <img src="styles/imgs/fundacao.png" alt="">
+        </div>
+        <div class="navbar">
+            <div class="btn from-center"><a href="index.html">Home</a></div>
+            <div class="btn from-center"><a href="quem-somos.html">Quem Somos</a></div>
+            <div class="btn from-center"><a href="portifolio-startup.html">Startups</a></div>
+            <div class="btn from-center"><a href="redes.html">Contato</a></div>
+        </div>
+        
+        <div class="menu-hamburguer">
+            <input type="checkbox" id="checkbox-menu">
+        
+            <label for="checkbox-menu" >
+                <span></span>
+                <span></span>
+                <span></span>
+                <section id="menu-box">
+                    <a href="home.html" target="iframe-main"> Home</a>
+                    <a href="quem somos.html">Quem Somos</a>
+                    <a href="portifolio-startup.html">Startups</a>
+                    <a href="redes.html">Contatos</a>
+                    <a href="login.html" class="link-login">Login</a>
+                </section>
+                
+            </label>
+            <div class="desfoque"></div>
+        </div>
+    </div>
+        <div class="button-login">
+            <a href="login.html">
+                <button >Login</button>
+            </a>
+        </div>
+    
+
+    </header>
+    <main class="home-main" style="margin-top: 0px;">
+        <section class="section-principal">
+        <!-- <h1 >Seja bem vindo a incubadora Devsis</h1>
+        
+        <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p> -->
+            <section class="home-section-carrosselarea">
+                <div class="galery">
+                    <div class="content-galery">
+                        <h1>Seja bem vindo à incubadora _FBTech</h1>
+                        <p>Seja bem-vindo à nossa incubadora, Aqui você encontrara as startups e projetos realizados por nossos alunos do Curso Técnico de Desenvolvimento de Sistemas da Fundação Bradesco.
+                        </p>
+                        <button class="saiba-mais" id="saiba-mais" onclick="openLink('quem-somos.html')">Saiba Mais</button>
+                    </div>
+                    <div class="overlay-red"></div>
+                    <div class="fotos" id="slider">
+                        <img src="styles/imgs/foto01.jpg" alt="Foto 1" class="selected">
+                        <img src="styles/imgs/foto02.jpg" alt="Foto 2" >
+                        <img src="styles/imgs/foto03.jpg" alt="Foto 3">
+                        <img src="styles/imgs/foto04.jpg" alt="Foto 4">
+                        
+                    </div>
+                </div>
+            </section>
+
+        <!-- <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.?</p> -->
+        </section>
+    </main>
+<!-- <section class="quem-somos-main info-incubadora" id="incubadora">
+
+    <section class="section-incubadora">
+
+        
+      
+
+            <article class="article-quem-somos">
+                <div class="content-quem-somos">
+                    <h3>O que é a incubadora?</h3>
+                    <p>Afinal, o que é uma incubadora? por definição temos incubadoras de startups como empresas ou instituições que auxiliam outras empresas nascentes e/ou em operação que tenham como caractrística a oferta de produtos e serviçõs com uma diferenciação dos demais.</p>
+                </div>
+                <div class="content-startup-logo">
+                    <div class="startup-logo"><img src="styles/imgs/fundacao.png" alt=""></div>
+                    <div class="startup-logo"><img src="styles/imgs/logo.png" alt=""></div>
+                    <div class="startup-logo"><img src="styles/imgs/kisspng-logo-generic-brand-clip-art-5ae5c54a897b40.7821574215250076905631.png" alt=""></div>
+                </div>
+                
+            </article>
+        
+        
+
+    </section>
+
+ Secao descrevendo o que fazemos (servicos/ a incubadora oferece) 
+    <section class=" section-incubadora">
+
+        <div class="content-incubadora">
+            <h3>O que você encontrará aqui? </h3>
+            <p>Nossa incubadora lhe oferece uma variedade de desenvolvedores unicos e especializados com os melhores profissionais que a Fundação Bradesco pode lhe oferecer, esperamos que encontre tudo o que procura aqui nos nossos serviços, por exemplo: </p>
+            <ul>
+                <li>Crianção de Páginas.</li>
+                <li>Desenvolvimento de Lógica e Códigos.</li>
+                <li>Criação e Desenvolvimento de Design.</li>
+                <li>Criação de Jogos.</li>
+            </ul>
+        </div>
+        <div class="fundo-transparencia-overlay"></div>
+    </section>
+
+
+    <section class="section-incubadora">
+        
+
+        <div class="content-incubadora">
+            <h3>Qual a Estrutura da incubadora?</h3>
+            <p>
+                A Bradesco fornece por meio da Fundação Bradesco e do seu Curso Técnico de Desenvolvimento de Sistemas toda a estrutura disponivel para nossos alunos, desde salas climatizadas até próprios notebooks para cada aluno, além do próprio nome, site e professores de excelência para incubar cada startups de seus alunos. 
+            </p>
+            <ul>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit.</li>
+            </ul>
+            <a href="quem-somos.html">Venha nos conhecer melhor</a>
+            
+        </div>
+
+        
+
+    </section>
+
+</section> -->
+
+<!-- <footer class="footer-principal">
+    <div class="logotipo-footer">
+        <img src="styles/imgs/fundacao.png" alt="">
+    </div>
+    <div class="texto-footer">
+        <p>Fundação Bradesco - Incubadora _fbtech Todos os direitos reservados</p>
+    </div>
+    </div>
+    <div class="navbar-footer">
+        <i class="fa-brands fa-instagram fa-2x"></i>
+        <i class="fa-brands fa-facebook fa-2x"></i>
+        <i class="fa-brands fa-linkedin fa-2x"></i>
+    </div>
+</div>   
+</footer> -->
+</body>
+<script>
+    
+    let time = 5000,
+    currentImageIndex = 0,
+    images = document
+                .querySelectorAll("#slider img")
+    max = images.length;
+
+function nextImage() {
+
+    images[currentImageIndex]
+        .classList.remove("selected")
+
+    currentImageIndex++
+
+    if(currentImageIndex >= max)
+        currentImageIndex = 0
+
+    images[currentImageIndex]
+        .classList.add("selected")
+}
+
+function start() {
+    setInterval(() => {
+        // troca de image
+        nextImage()
+    }, time)
+}
+
+window.addEventListener("load", start)
+let info = document.getElementById("incubadora")
+let button = document.getElementById("saiba-mais")
+
+    function openLink(url){
+        window.location.href = url;    
+    }
+    function openSaibaMais(){
+        info.style.display = "block"
+        let elemento = document.querySelector("#incubadora")
+        let heigth = document.querySelector("#incubadora")
+        
+        window.scrollBy({
+            top: heigth.getBoundingClientRect().top, left: 0, behavior: "smooth"
+        })         
+    }
+    
+</script>
+<script src="script/script.js"></script>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Login</title>
+</head>
+<body class="bg">
+
+    
+
+    <main class="login-main-flex">
+        <header class="header-login">
+            <a href="index.html" >
+                <i class="fa-solid fa-house fa-3x"></i>
+            </a>
+        </header>
+        <section class="section-login">
+
+            <form action="" id="login">
+                <div class="div-nome">
+                    <label for="nome">Usuario<br></label>
+                    <input placeholder="Nome" class="login-form" name="nome" type="text" required>
+                </div>
+
+                <div class="div-senha">
+                    <label for="senha">Senha<br></label>
+                    <input placeholder="Senha" class="login-form" id="senha" type="password" required>
+                    <span class="show-btn" onclick="mostrar_senha(this, '#senha')"></span>
+                </div>
+                               
+                <div class="login-area-button">
+                    <div class="link-login">
+                        <a href="recuperacao-de-senha.html">Esqueci minha senha</a>
+                        <a href="cadastro.html">Cadastre-se</a>
+                    </div>
+                    <button type="submit">Login</button>
+                </div>
+                <!-- <div class="login-area-button">
+                    <a href="cadastro.html">Cadastre-se</a>
+                </div> -->
+            </form>
+    
+    </main>
+
+</body>
+</html>
+<script src="script/script.js"></script>

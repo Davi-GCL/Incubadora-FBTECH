@@ -1,0 +1,417 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/card styles.css">
+    <!-- <link rel="stylesheet" href="styles/carousel.scss"> -->
+    <title>Startups</title>
+</head>
+<body>
+
+    <header  class="header-normal" id="header-principal">
+        <div class="logotipo">
+            <img src="styles/imgs/fundacao.png" alt="">
+        </div>
+        <div class="navbar">
+            <div class="btn from-center"><a href="index.html">Home</a></div>
+            <div class="btn from-center"><a href="quem-somos.html">Quem Somos</a></div>
+            <div class="btn from-center"><a href="portifolio-startup.html">Startups</a></div>
+            <div class="btn from-center"><a href="redes.html">Contato</a></div>
+        </div>
+        
+        <div class="menu-hamburguer">
+            <input type="checkbox" id="checkbox-menu">
+        
+            <label for="checkbox-menu" >
+                <span></span>
+                <span></span>
+                <span></span>
+                <section id="menu-box">
+                    <a href="home.html" target="iframe-main"> Home</a>
+                    <a href="quem somos.html">Quem Somos</a>
+                    <a href="portifolio-startup.html">Startups</a>
+                    <a href="redes.html">Contatos</a>
+                    <a href="login.html" class="link-login">Login</a>
+                </section>
+                <div class="desfoque"></div>
+            </label>
+            
+        </div>
+    </div>
+        <div class="button-login">
+            <a href="login.html">
+                <button >Login</button>
+            </a>
+        </div>
+    
+
+    </header>
+
+    <main class="startup-main-grid">
+
+        <section class="section-portifolio-grid">
+            
+            
+            <div class="div-portifolio">
+                <div class="content-portifolio">
+                    
+                    <h2>Acesse o portifolio de nossas Startups</h2>
+                    <p>E venha conhecer todas as nossas empresas incubadas.</p>
+                    
+                </div>
+
+                <form action="" class="search-mobile">
+                            
+                    <input type="text" placeholder="Encontre sua Startup" id="search1">
+                    <input type="submit" value="O" id="send1">
+                    
+                </form>
+
+                
+                <button class="button-portifolio" onclick="openPortifolio()" id="button-portifolio">
+                    Mostrar Portifolio
+                </button>
+                
+            </div>
+           
+            <section class="section-carrossel">
+                
+            
+                    
+                    <section class="startup-section-carrossel-area">
+                        <div class="galery startup-galery">
+                            
+                            <div class="overlay-red"></div>
+                            <div class="fotos" id="slider">
+                                <div class="card-slider selected">
+                                    <div class="content-card-slider ">
+                                        <!-- <div class="realce-vidro"></div>
+                                        <h2>Startup FB1T</h2>
+                                        <p>Descrição: Somos a FB1T, Venha nos conhecer!</p> -->
+                                    </div>
+                                    <img src="styles/imgs/startup 1.jpg" alt="Foto 1" class="selected">
+                                </div>
+                                <div class="card-slider">
+                                    
+                                    <div class="content-card-slider">
+                                        
+                                        <!-- <div class="realce-vidro"></div>
+                                        <h2>Startup On Livery</h2>
+                                        <p>Descrição: Somos a On Livery, Venha nos conhecer! </p> -->
+                                        
+                                    </div>
+                                    <img src="styles/imgs/startup 2.png" alt="Foto 2" >
+                                </div>
+
+                                <div class="card-slider">
+                                   
+                                    <div class="content-card-slider">
+                                        <!-- <div class="realce-vidro"></div>
+                                            <h2>Startup LogSystem</h2>
+                                            <p>Descrição: Somos a LogSystem, Venha nos conhecer! </p> -->
+                                    </div>
+                                    <img src="styles/imgs/startup 3.jpg" alt="Foto 3">
+                                </div>
+
+                            </div>
+                    <!-- Barras de pesquisa -->
+
+                            <form action="" class="search-desk">
+                                <!-- <label for=""> Pesquise nossos Projetos.</label>  -->
+                                <div class="div-input">
+                                    <input type="text" placeholder="Encontre startups e seus projetos ..." id="search2">
+                                    <input type="image" id="send2" src="styles/imgs/magnifying-glass-solid.svg" style="color: rgb(255, 255, 255);">
+                                </div>
+                            </form>
+                            </form>
+
+                    <!-- Botoes para movimentar o slide show -->
+                            <div class="prev" onclick="prevImage()" style="cursor:pointer;">
+                                <i class="fa-sharp fa-solid fa-caret-left fa-6x"></i>
+                            </div>
+                            <div class="next" onclick="nextImage()" style="cursor:pointer;">
+                                <i class="fa-sharp fa-solid fa-caret-right fa-6x" ></i> 
+                                
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                
+            </section>
+            
+            
+            
+        </section>
+        
+        <section class="section-startups" id="portifolio">
+            
+            <!-- Vai Parecer caso o usuário clique no botão -->
+            
+        <div class="container-startup-flex desktop">
+                
+                    <div class="card-list">
+                        <div class="card" >
+                            <div class="card_data card_content">
+                                <h2 class="title-startup" style="cursor: pointer;" onclick="window.location.href = '/Startup_FBIT (ver12)/index.html'" >FBIT</h2>
+                                
+                                <p>
+                                    Somos uma startup fundanda a partir de ex-alunos da Fundação Bradesco e novos colegas, a partir do curso de desenvolvimento de sistemas na mesma.
+                                </p>
+                                <a onclick="click2('fbit')">Ver Projetos</a>
+                            </div>
+                            <div class="card_data card_logo">
+                                <img src="styles/imgs/fb1t-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_data card_content">
+                            <h2 class="title-startup">On Livery</h2>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
+                                reiciendis dolor quibusdam, laborum quos.
+                            </p>
+                            <a onclick="click2('on_livery')">Ver Projetos</a>
+                            </div>
+                            <div class="card_data card_logo">
+                                <img src="styles/imgs/on-livery.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_data card_content">
+                                <h2 class="title-startup">LogSystem</h2>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
+                                    reiciendis dolor quibusdam, laborum quos.
+                                </p>
+                                <a onclick="click2('logsystem')">Ver Projetos</a>
+                            </div>
+                            <div class="card_data card_logo">
+                                <img src="styles/imgs/log-system.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                <div class="fundo-transparencia-overlay"></div>
+        </div>
+            
+            
+        <div class="container-startup-flex" id="projects">
+            <div class="card-list" id="lista">
+
+              
+        
+            
+            </div>
+            <div class="fundo-transparencia-overlay"></div>
+
+        </div>
+
+
+
+            
+        </section>
+    </main>
+
+    <footer class="footer-principal">
+        <div class="logotipo-footer">
+            <img src="styles/imgs/fundacao.png" alt="">
+        </div>
+        <div class="texto-footer">
+            <p>Fundação Bradesco - Incubadora _fbtech Todos os direitos reservados</p>
+        </div>
+        
+        <div class="navbar-footer">
+            <i class="fa-brands fa-instagram fa-2x"></i>
+            <i class="fa-brands fa-facebook fa-2x"></i>
+            <i class="fa-brands fa-linkedin fa-2x"></i>
+        </div>
+    </div>
+    </footer>
+    <!-- <script src="script/script.js"></script> -->
+</body>
+<script type="module">
+        
+    // let time = 5000,
+    // currentImageIndex = 0,
+    // images = document.querySelectorAll("#slider .card-slider")
+    // let max = images.length;
+    // let portifolio = document.getElementById("portifolio")
+    
+    // function nextImage() {
+        
+    //     images[currentImageIndex]
+    //         .classList.remove("selected")
+
+    //     currentImageIndex++
+
+    //     if(currentImageIndex >= max)
+    //         currentImageIndex = 0
+
+    //     images[currentImageIndex]
+    //         .classList.add("selected")
+    // }
+    // function prevImage() {
+
+    //     images[currentImageIndex]
+    //         .classList.remove("selected")
+
+    //     currentImageIndex--
+
+    //     if(currentImageIndex < 0)
+    //         currentImageIndex = max - 1
+
+    //     images[currentImageIndex]
+    //         .classList.add("selected")
+    // }
+    //  function start() {
+    //      setInterval(() => {
+    //         // troca de image
+    //         nextImage()
+    //      }, time)
+    //  }
+
+    // window.addEventListener("load", start)
+
+    // let button = document.getElementById("button-portifolio")
+    // function openPortifolio(){
+    //     portifolio.style.display = "flex"
+    //     button.setAttribute("onclick", "closePortifolio()")
+    //     button.innerHTML = "Fechar Portifolio"
+    //     let heigth = document.querySelector("#portifolio")
+        
+    //     window.scrollTo({
+    //         top: heigth.getBoundingClientRect().top, left: 0, behavior: "smooth"
+    //     })
+    // }
+    // function closePortifolio(){
+    //     portifolio.style.display = "none"
+    //     button.setAttribute("onclick", "openPortifolio()")
+    //     button.innerHTML = "Mostrar Portifolio"
+    //     removeCard()
+    //     close()
+    // }
+    // function createCard(title, text, image, /*link, */ index){
+
+        
+    //     let aux = index+1
+    //     while(aux > 3){
+    //         aux = aux - 3
+    //     }
+
+    //     const card_project = document.createElement("div")
+    //     card_project.classList.add("card-project")
+
+    //     const card_img = document.createElement("div")
+    //     card_img.classList.add("card-image")
+    //     card_project.appendChild(card_img)
+
+    //     const img =  document.createElement("img")
+    //     img.setAttribute("src", image)
+    //     card_img.appendChild(img)
+
+    //     const card_body = document.createElement("div")
+    //     card_body.classList.add("card-body")
+    //     card_project.appendChild(card_body)
+
+    //     const h2 = document.createElement("h2")
+    //     let t = "t" + aux
+    //     h2.classList.add(t)
+    //     h2.innerText = title
+    //     card_body.appendChild(h2)
+
+    //     const paragraph = document.createElement("p")
+    //     paragraph.innerText = text
+    //     card_body.appendChild(paragraph)
+
+    //     const card_footer= document.createElement("div")
+    //     card_footer.classList.add("card-footer")
+    //     let ft = "ft" + aux
+    //     card_footer.classList.add(ft)
+    //     card_project.appendChild(card_footer)
+
+    //     const info = document.createElement("div")
+    //     info.classList.add("info")
+    //     card_footer.appendChild(info)
+
+    //     const type= document.createElement("div")
+    //     type.classList.add("type")
+    //     type.innerText = "Ver Projeto"
+    //     info.appendChild(type)
+
+    //     document.getElementById("lista").appendChild(card_project)
+    // }
+    // function removeCard(){
+    //     const remove = document.getElementsByClassName("card-project")
+    //     console.log(remove.length)
+    //     if(remove != null){ 
+    //         while(remove.length != 0){
+    //             for(var i = 0; i < remove.length; i++){
+    //                 console.log(i)
+    //                 remove[i].parentNode.removeChild(remove[i])
+    //              }
+    //         }
+            
+    //     }
+    // }
+    // function open(){
+    //     let projects = document.getElementById("projects")
+    //     projects.style.display = "flex"
+    // }
+    // function close(){
+    //     let projects = document.getElementById("projects")
+    //     projects.style.display = "none"
+    // }
+    // function click1(){
+    //     removeCard()
+    //     open()
+    //     const imgsSrc = ["styles/imgs/show do milhao.jpg", "styles/imgs/py js.webp", "styles/imgs/html5.webp"]
+    //     const descriptions = ["Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam reiciendis dolor quibusdam, laborum quos.", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam reiciendis dolor quibusdam, laborum quos.", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam reiciendis dolor quibusdam, laborum quos."]
+    //     const titles = ["Show do Milhão", "Search Engine com Python", "Site Incubadora"]
+    //     for(var i = 0; i < titles.length; i++){
+    //         createCard(titles[i], descriptions[i], imgsSrc[i], i)
+    //     }
+    //     let heigth = document.querySelector(".card-footer")
+        
+    //     window.scrollTo({
+    //         top: heigth.getBoundingClientRect().top, left: 0, behavior: "smooth"
+    //     })
+    // }
+    // function click2(){
+    //     removeCard()
+    //     open()
+    //     const imgsSrc = ["styles/imgs/projeto 1.jpg", "styles/imgs/projeto 2.png", "styles/imgs/images-64.jpeg"]
+    //     const descriptions = ["Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam reiciendis dolor quibusdam, laborum quos.", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam reiciendis dolor quibusdam, laborum quos.", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam reiciendis dolor quibusdam, laborum quos."]
+    //     const titles = ["Projeto 1 de JavaScript", "Projeto 2 de Python", "Projeto 3 de C"]
+    //     for(var i = 0; i < titles.length; i++){
+    //         createCard(titles[i], descriptions[i], imgsSrc[i], i)
+    //     }
+    //     let heigth = document.querySelector(".card-footer")
+        
+    //     window.scrollTo({
+    //         top: heigth.getBoundingClientRect().top, left: 0, behavior: "smooth"
+    //     })
+    // }
+    // function click3(){
+    //     removeCard()
+    //     open()
+    //     const imgsSrc = ["styles/imgs/images-63.jpeg", "styles/imgs/startup.png", "styles/imgs/foto04.jpg"]
+    //     const descriptions = ["Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam reiciendis dolor quibusdam, laborum quos.", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam reiciendis dolor quibusdam, laborum quos.", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam reiciendis dolor quibusdam, laborum quos."]
+    //     const titles = ["Jogo 1", "Site 2", "Programa 3"]
+    //     for(var i = 0; i < titles.length; i++){
+    //         createCard(titles[i], descriptions[i], imgsSrc[i], i)
+    //     }
+    //     let heigth = document.querySelector(".card-footer")
+        
+    //     window.scrollTo({
+    //         top: heigth.getBoundingClientRect().top, left: 0, behavior: "smooth"
+    //     })
+    // }
+</script>
+</html>
+<script src="script/filtro.js"></script>
+<script src="script/script.js"></script>

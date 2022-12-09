@@ -1,0 +1,335 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Quem Somos</title>
+    <style>
+        .quem-somos{
+            padding-top: 12vh;
+            color: #fff;
+            padding-right: 7%;
+            padding-left: 7%;
+            background: linear-gradient(196.28deg, #2B466F 9.24%, #D91A2A 137.62%);
+        }
+        .quem-somos h1{
+            font-size: 2.5rem;
+            margin-bottom: 1%;
+        }
+        .section-quem-somos p, .section-estrutura p, .section-colaboradores p{
+            font-weight: 200;
+            font-size: 0.8rem;
+            margin-bottom: 3%;
+        }
+        .section-estrutura{
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 3%;
+        }
+        .section-estrutura h2, .section-colaboradores h2{
+            display: block;
+            
+            font-size: 2rem;
+            margin-bottom: 3%;
+        }
+        .slider-espaco{
+            border-radius: 1.25rem;
+        }
+        .container-estrutura{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .section-colaboradores{
+            padding-bottom: 5%;
+        }
+        .container-colaboradores{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            
+        }
+
+        .content-colaboradores{
+            border: 1px solid red;
+            width: 18rem;
+        }
+        .content-colaboradores p{
+            text-align: justify;
+        }
+        .img-colaborador{
+            background-color: rgb(179, 179, 179);
+            height: 10rem;
+            width: 18rem;
+            margin-bottom: 3%;
+        }
+    </style>
+</head>
+<body >
+
+    <header class="header-normal" id="header-principal">
+        <div class="logotipo">
+            <img src="styles/imgs/fundacao.png" alt="">
+        </div>
+        <div class="navbar">
+            <a href="home.html"> Home</a>
+            <a href="quem somos.html">Quem Somos</a>
+            <a href="portifolio-startup.html">Startups</a>
+            <a href="redes.html">Contatos</a>
+            
+        </div>
+        
+        <div class="menu-hamburguer">
+            <input type="checkbox" id="checkbox-menu">
+        
+            <label for="checkbox-menu" >
+                <span></span>
+                <span></span>
+                <span></span>
+                <section id="menu-box">
+                    <a href="home.html" > Home</a>
+                    <a href="quem somos.html">Quem Somos</a>
+                    <a href="portifolio-startup.html">Startups</a>
+                    <a href="redes.html">Contatos</a>
+                    <a href="login.html" class="link-login">Login</a>
+                </section>
+                <div class="desfoque"></div>
+            </label>
+            
+        </div>
+    </div>
+    <div class="button-login">
+        <a href="login.html">
+            <button >Login</button>
+        </a>
+    </div>
+    
+
+    </header>
+    <main class="quem-somos">
+        <section class="section-quem-somos">
+            <h1>Quem Somos?</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit
+            </p>
+            <div class="container-cards-quality">
+                <style>
+                    .container-cards-quality{
+                        margin-top: 3%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        align-items: center;
+                        }
+                    .card-quality{
+                        background-color: #fff;
+                        border-radius: 1rem;
+                        box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+                        padding: 1.5rem;
+                        
+                        width: 18rem;
+                        height: 13rem;
+                        transition: all 0.3s ease-out;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        margin-bottom: 3%;
+                        }
+                    .card-quality:hover {
+                        transform: translateY(-5px);
+                        cursor: pointer;
+                        }
+                        .container-cards-quality h2{
+                            font-weight: 600;
+                            
+                        }
+                        .card-quality p {
+                        font-weight: 500;
+                        color: #000000;
+                        font-size: 0.8rem;
+                        }
+                        
+                        .image {
+                        align-self: center;
+                        display: block;
+                        max-width: 4rem;
+                        max-height: 4rem;
+                        }
+                        .blue {
+                        border-left: 5px solid #4895ff;
+                        }
+                        .blue h2{
+                        color: #4895ff;
+                        }
+                        .green {
+                        border-left: 5px solid #3bb54a;
+                        }
+                        .green h2{
+                            color: #3bb54a;
+                        }
+                        .red {
+                        border-left: 5px solid #b3404a;
+                        }
+                        .red h2{
+                            color: #b3404a;
+                        }
+                </style>
+                    <div class="card-quality green">
+                      <h2>MISSÃO</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercita.
+                      </p>
+                      <img class="image" src="styles/imgs/missao.png" alt="money" />
+                    </div>
+               
+                    <div class="card-quality blue">
+                      <h2>Visão</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercita.
+                      </p>
+                      <img class="image" src="styles/imgs/visao.png" alt="settings" />
+                    </div>
+               
+                    <div class="card-quality red">
+                      <h2>Valores</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercita.
+                      </p>
+                      <img class="image" src="styles/imgs/valores.png" alt="article" />
+                    </div>
+                  </div>
+            
+        </section>
+        
+        <section class="section-estrutura">
+            <h2>Conheça nossa estrutura</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit.
+            </p>
+            <div class="container-estrutura">
+                <section class="slider-espaco">
+                    <div class="card-img-espaco">
+                        <img src="styles/imgs/nosso-espaco.webp" alt="">
+                    </div>
+
+                    <div class="content-espaco">
+                        <h3>Nosso Espaço</h3>
+                        
+                        
+                        <p>Varius duis at consectetur lorem donec massa sapien. 
+                                Volutpat odio facilisis mauris sit amet massa. 
+                        </p>
+                    </div>
+                    
+                    <div class="transparencia-vermelha"></div>    
+                    <div class="transparencia-azul"></div>
+                </section>
+
+                <section class="slider-espaco">
+                    <div class="card-img-espaco">
+                        <img src="styles/imgs/equipe.jfif" alt="">
+                    </div>
+
+                    <div class="content-espaco">
+                        <h3>Nossa Equipe</h3>
+                        
+                        
+                        <p>Varius duis at consectetur lorem donec massa sapien. 
+                                Volutpat odio facilisis mauris sit amet massa. 
+                        </p>
+                    </div>
+                    
+                    <div class="transparencia-vermelha"></div>    
+                    <div class="transparencia-azul"></div>
+
+                </section>
+                <section class="sec-exp">
+                        <div class="empresas">
+                            <div class="startup-icon">
+                                <img src="styles/imgs/building-solid.svg" alt="">
+                            </div>
+                            <h3>3 Startups</h3>
+                            <p>Lorem ipsum dolor sit amet explo yan ama pege</p> 
+                        </div>
+
+                        <div class="network">
+                            <div class="network-icon">
+                                <img src="styles/imgs/people-arrows-solid.svg" alt="">
+                            </div>
+                            <h3>20 Pessoas</h3>
+                            <p>Lorem ipsum dolor sit amet explo yan ama pege</p> 
+                        </div>
+
+                        <div class="projects">
+                            <div class="project-icon">
+                                <img src="styles/imgs/envelope-solid.svg" alt="">
+                            </div>
+                            <h3>+10 Projetos</h3>
+                            <p>Lorem ipsum dolor sit amet explo yan ama pege</p>     
+                        </div>
+
+                    </section>
+            </div>
+        </section>
+
+        <section class="section-colaboradores">
+            <h2>Conheça nossos colaboradores</h2>
+            <div class="container-colaboradores">
+                <div class="content-colaboradores">
+                    <div class="img-colaborador">
+                        <img src="" alt="">
+                    </div>
+                    <h4>Fundação Bradesco</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercita
+                    </p>
+                </div>
+                <div class="content-colaboradores">
+                    <div class="img-colaborador">
+                        <img src="" alt="">
+                    </div>
+                    <h4>Fabiano Ramos</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercita
+                    </p>
+                </div>
+                <div class="content-colaboradores">
+                    <div class="img-colaborador">
+                        <img src="" alt="">
+                    </div>
+                    <h4>Fernando Trindade</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercita
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-principal">
+        <div class="logotipo-footer">
+            <img src="styles/imgs/fundacao.png" alt="">
+        </div>
+        <div class="texto-footer">
+            <p>Fundação Bradesco - Incubadora FbDevSis Todos os direitos reservados</p>
+        </div>
+        </div>
+        <div class="navbar-footer">
+                <i class="fa-brands fa-instagram fa-4x"></i>
+                <i class="fa-brands fa-facebook fa-4x"></i>
+                <i class="fa-brands fa-linkedin fa-4x"></i>
+            </div>
+        </div>   
+    </footer>
+</body>
+</html>
+<script src="script/script.js"></script>
