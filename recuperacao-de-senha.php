@@ -46,7 +46,7 @@
                 
 
                 <div class="login-area-button">
-                    <a href="login.html">Login</a>
+                    <a href="login.php">Login</a>
                     <button type="submit">Confirmar</button>
                 </div>
                 <div class="login-area-button">

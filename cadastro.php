@@ -1,3 +1,35 @@
+<?php
+include("DBsetup.php");
+
+//Se existe o post para nome e senha para verificar se a chave do array está definida antes de tentar acessá-la. Para fazer isso, você pode usar a função "isset()":
+if(isset($_POST['nome']) || isset($_POST['email']) || isset($_POST['senha'])){
+
+    //Atribui o valor dos formularios e protege de ataques de sql injection
+    $nome = $mysqli->real_escape_string($_POST['nome']);
+    $email = $mysqli->real_escape_string($_POST['email']);
+    $senha = $mysqli->real_escape_string($_POST['senha']);
+    
+    // Encriptar a senha antes de armazenar no banco de dados
+    // $senha = password_hash($senha, PASSWORD_DEFAULT);
+    
+    // Inserir dados na tabela
+    $sql = "INSERT INTO usuarios (nome, email, senha)
+    VALUES ('$nome', '$email', '$senha')";
+    
+    if ($mysqli->query($sql) === TRUE) {
+        if(strlen($_POST['nome']) && strlen($_POST['senha']) != 0){
+            echo "<script> alert('Usuário registrado com sucesso'); </script>";
+        }
+    } else {
+        echo "Erro: " . $sql . "<br>" . $mysqli->error;
+    }    
+
+}
+
+$mysqli->close();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,31 +54,34 @@
         </header>
         <section class="section-cadastro">
 
-            <form action="" id="login">
+            <form action="" method="POST" id="login">
                 <div class="div-nome">
                     <label for="nome">Nome Completo<br></label>
-                    <input placeholder="Nome" class="login-form" name="nome" type="text">
+                    <input placeholder="Nome" class="login-form" name="nome" 
+                    type="text">
                 </div>
 
                 <div class="div-email">
                     <label for="email">E-Mail<br></label>
-                    <input placeholder="Seu e-mail" class="login-form" name="email" type="text">
+                    <input placeholder="Seu e-mail" class="login-form" name="email" 
+                    type="text">
                 </div>
 
                 <div class="div-senha">
                     <label for="senha">Senha<br></label>
-                    <input placeholder="Crie uma senha" class="login-form" id="senha" type="password" required>
+                    <input placeholder="Crie uma senha" class="login-form" id="senha" name="senha"
+                    type="password" required>
                     <span class="show-btn" onclick="mostrar_senha(this, '#senha')"></span>
                 </div>
 
                 <div class="div-senha">
                     <label for="senha">Confirmar Senha<br></label>
-                    <input placeholder="Confirme a senha" class="login-form" id="conf-senha" type="password" required>
+                    <input placeholder="Confirme a senha" class="login-form" id="conf-senha" name="conf-senha" type="password" required>
                     <span class="show-btn" onclick="mostrar_senha(this, '#conf-senha')"></span>
                 </div>
 
                 <div class="login-area-button">
-                    <a href="login.html">Ja Tenho Cadastro</a>
+                    <a href="login.php">Ja Tenho Cadastro</a>
                     <button type="submit" onclick="">Cadastrar</button>
                 </div>
             </form>
