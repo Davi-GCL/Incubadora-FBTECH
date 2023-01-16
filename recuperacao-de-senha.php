@@ -1,3 +1,28 @@
+<?php
+include("DBsetup.php");
+
+
+if(isset($_POST['email']) || isset($_POST['senha'])){
+
+    //Se as entradas dos formularios nao estiverem vazias, armazenara a 'string' digitada
+    if(strlen($_POST['email']) && strlen($_POST['senha']) != 0){
+
+        //Atribui o valor dos formularios e protege de ataques de sql injection
+        $email = $mysqli->real_escape_string($_POST['email']);
+        $senha = $mysqli->real_escape_string($_POST['senha']);
+        $conf_senha = $mysqli->real_escape_string($_POST['conf-senha']);
+
+        // Encripta a senha antes de armazenar no banco de dados
+        // $senha = password_hash($senha, PASSWORD_DEFAULT);
+
+        
+        if($senha != $conf_senha){
+            echo "<script>alert('Senhas não conferem!')</script>";
+        }
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +46,7 @@
         </header>
         <section class="section-login">
 
-            <form action="" id="login">
+            <form method="POST" action="" id="login">
                 <div class="div-email">
                     <label for="email">Email<br></label>
                     <input class="login-form" name="email" type="text" placeholder="E-mail">
@@ -34,13 +59,13 @@
 
                 <div class="div-senha">
                     <label for="senha">Senha<br></label>
-                    <input placeholder="Crie uma senha" class="login-form" id="senha" type="password" required>
+                    <input placeholder="Crie uma senha" name="senha" class="login-form" id="senha" type="password" required>
                     <span class="show-btn" onclick="mostrar_senha(this, '#senha')"></span>
                 </div>
 
                 <div class="div-senha">
                     <label for="senha">Confirmar Senha<br></label>
-                    <input placeholder="Confirme a senha" class="login-form" id="conf-senha" type="password" required>
+                    <input placeholder="Confirme a senha" name="conf-senha"class="login-form" id="conf-senha" type="password" required>
                     <span class="show-btn" onclick="mostrar_senha(this, '#conf-senha')"></span>
                 </div>
                 

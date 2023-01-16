@@ -45,9 +45,10 @@ function myFunction() {
 
 }
 
+//Algoritmo para alternar os campos de senha (para mostrar ou esconder a senha) individualmente
 function mostrar_senha(elemento, manipulado){
   let pass_input = document.querySelector(manipulado);
-  let show_btn = elemento
+  let show_btn = elemento;
   
   // console.log(pass_input.type);
   
