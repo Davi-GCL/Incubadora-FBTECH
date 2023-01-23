@@ -65,7 +65,12 @@ function mostrar_senha(elemento, manipulado){
 
 }
   
- 
+const form_login = document.querySelector("login");
+
+//Impede de o submit do formulario recarregar a pagina:
+form_login.addEventListener('submit', (e) => {
+  e.preventDefault();
+})
 
 
 
